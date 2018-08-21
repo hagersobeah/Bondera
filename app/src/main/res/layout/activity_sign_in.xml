@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ea.bondera2.SignIn">
+
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:inputType="textEmailAddress"
+        android:hint="Type your email here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:singleLine="false"
+        android:selectAllOnFocus="false"
+        style="@style/Widget.AppCompat.EditText"
+        tools:layout_editor_absoluteY="138dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/passwordtext"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/passwordtext"
+        android:inputType="textPassword"
+        android:hint="Type your password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        style="@style/Widget.AppCompat.EditText"
+        tools:layout_editor_absoluteY="205dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="79dp"
+        android:layout_above="@+id/signInbtn"
+        android:layout_alignLeft="@+id/emailtext"
+        android:layout_alignStart="@+id/emailtext" />
+
+
+    <Button
+        android:id="@+id/signUpbtn"
+        android:text="New here?SignUp."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteY="410dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="63dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/forgetpasswordbtn"
+        android:text="Forget password?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteY="410dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_below="@+id/signInbtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/signInbtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signUpbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="67dp"
+        android:background="#3987C8"
+        android:elevation="0dp"
+        android:fontFamily="cursive"
+        android:text="SignIn"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="268dp" />
+
+
+</RelativeLayout>
+

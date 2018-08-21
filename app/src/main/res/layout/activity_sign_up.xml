@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ea.bondera2.SignUp">
+
+    <Button
+        android:id="@+id/signUpbtn2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#3987C8"
+        android:elevation="0dp"
+        android:fontFamily="cursive"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordedittext"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="E-mail"
+        android:ems="10"
+        android:id="@+id/emailedittext"
+        android:layout_marginEnd="57dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="76dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="57dp" />
+    <!--android:layout_below="@+id/usernameedittext"-->
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="User name"
+        android:ems="10"
+        android:id="@+id/usernameedittext"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/emailedittext"
+        app:layout_constraintTop_toBottomOf="@+id/emailedittext"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/emailedittext" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:ems="10"
+        android:id="@+id/passwordedittext"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/dateOfBirth"
+        android:layout_marginTop="78dp"
+        app:layout_constraintTop_toBottomOf="@+id/dateOfBirth"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/dateOfBirth" />
+    <!--   android:layout_below="@+id/emailedittext"-->
+
+    <EditText
+        android:id="@+id/dateOfBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Date of birth"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/usernameedittext"
+        app:layout_constraintTop_toBottomOf="@+id/usernameedittext"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/usernameedittext" />
+
+<!--    <EditText
+        android:id="@+id/genderEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Gender"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteY="150dp"
+        tools:layout_editor_absoluteX="85dp" />-->
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="192dp"
+        android:layout_height="78dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordedittext"
+        app:layout_constraintRight_toRightOf="@+id/dateOfBirth"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintTop_toTopOf="@+id/dateOfBirth"
+        android:layout_marginRight="23dp"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginEnd="23dp">
+
+        <RadioButton
+            android:id="@+id/femaleRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Female"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse" />
+
+        <RadioButton
+            android:id="@+id/maleRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Male"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse" />
+    </RadioGroup>
+
+
+</android.support.constraint.ConstraintLayout>
+

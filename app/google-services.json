@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "883071468082",
+    "firebase_url": "https://bonderaapp.firebaseio.com",
+    "project_id": "bonderaapp",
+    "storage_bucket": "bonderaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883071468082:android:a563e729a8cae389",
+        "android_client_info": {
+          "package_name": "com.example.ea.bondera2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883071468082-bmf1f4h2rjlm7t7lir5njmnelv8f8038.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ea.bondera2",
+            "certificate_hash": "9516eb58c7fd9fe55053785afbebb3ec1e8045b5"
+          }
+        },
+        {
+          "client_id": "883071468082-267gs3drn99ile5hcb11d0rnokn6tjjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSfkf17VyFEiKG1Weyn9Mp_CTbT6LQyJk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883071468082-267gs3drn99ile5hcb11d0rnokn6tjjd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
